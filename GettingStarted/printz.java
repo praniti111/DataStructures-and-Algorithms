@@ -1,3 +1,6 @@
+/* 1. Print Z
+To print letter Z in the console */
+
 import java.util.*;
 
 public class Main {
