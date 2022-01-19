@@ -37,8 +37,8 @@ public int getAt(int idx)//Given argument/parameter as the index at which the da
     return -1;
   }
   
-  if(idx == 0) getFirst();
-  if(idx == size-1) getLast();
+  if(idx == 0) return getFirst();
+  if(idx == size-1) return getLast();
   
   Node curr = head;//initializing the pointer to head of the ll to start the traversing of the ll
   for(int i =0;i<idx;i++) //loop for traversing th ll from 0 to the given index of the ll
