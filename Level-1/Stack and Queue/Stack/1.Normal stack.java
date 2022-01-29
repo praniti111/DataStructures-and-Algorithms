@@ -19,17 +19,17 @@ public class Main {
     int[] arr;
     int top;
 
-    public CustomStack(int cap) {
+    public CustomStack(int cap) {//parametriized Constructor O(n)
       arr = new int[cap];
       top = -1;
     }
     
-    int size()
+    int size()// get the top index of the stack
     {
       return top+1;
     }
     
-    void display()
+    void display()// To display the elements in the stack from top to bottom
     {
       for(int i = top;i>=0;i--)
       {
@@ -38,7 +38,7 @@ public class Main {
       System.out.println();
     }
     
-    void push(int val)
+    void push(int val)// To push add the element to the stack from top
     {
       if(top == arr.length -1)
       {
@@ -49,7 +49,7 @@ public class Main {
       arr[top] = val;
     }
     
-    int pop()
+    int pop()// to remove pop the first element which is last added
     {
       if(top == -1)
       {
@@ -62,7 +62,7 @@ public class Main {
       return val;
     }
     
-    int top()
+    int top()// to tget the element yt the top 
     {
       if(top==-1)
       {
