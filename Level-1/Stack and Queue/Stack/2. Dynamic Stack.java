@@ -9,7 +9,9 @@
 //      2.5. display -> Print the elements of stack in LIFO manner (space-separated) 
 //      ending with a line-break.
 
-void push(int val) {
+void push(int val) { // Array is a static data stucture and ArrayList and Linkedlist are dynamic data stuctures || if the data stucture is dynamic then the elements can be added
+      //at any point of time but itn static if u specify a number then it creats only that many number of index in array so we need to use doubling to increase the index in array
+      
       if (tos == data.length - 1) {//How to implement stack dynamically by array = Use DOUBLING
         int[] temp = new int[2 * data.length]; // double the size of the array
         for(int i = 0;i<data.length;i++)// First insert the previous elements of the array in the new created array
