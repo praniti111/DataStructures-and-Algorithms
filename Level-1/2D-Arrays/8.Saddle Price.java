@@ -1,4 +1,4 @@
-//8. Saddle Price
+//Saddle Price
 
 import java.io.*;
 import java.util.*;
@@ -14,12 +14,16 @@ public class Main {
 
         for(int i = 0;i<n;i++)
         {
-            mat[i][i] = sc.nextInt();
+            for(int j = 0;j<n;j++)
+            {
+            mat[i][j] = sc.nextInt();
+            }
         }
 
         for(int i=0;i<mat.length;i++)
         {
             int minCol = 0;
+
             for(int j=0;j<mat[0].length;j++)
             {
                 if(mat[i][j]<mat[i][minCol])
@@ -31,20 +35,22 @@ public class Main {
             int maxRow = 0;
             for(int k = 0;k<mat.length;k++)
             {
-                if(mat[k][minCol]>mat[minRow][maxCol])
+                if(mat[k][minCol]>mat[maxRow][minCol])
                 {
-                    minRow = k;
+                    maxRow = k;
                 }
             }
 
-        }
+        
         if(maxRow == i)
         {
-            System.out.print(mat[minRow][maxCol]);
+            System.out.println(mat[maxRow][minCol]);
             return;
         }
 
-    }
+        }
+
     System.out.println("Invalid input");
+    }
 
 }
