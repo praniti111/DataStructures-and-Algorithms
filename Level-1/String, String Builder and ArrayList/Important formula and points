@@ -4,3 +4,6 @@
 A can be replaced for any Capital alphabet and 'a' can be replaced by any lowercase alphabet
 eg : ('p' - 'P') = ('a' - 'A') = 32 
 Can convert a word or a String to lower or uppercase (Toggle between them)
+
+2. Java Strings are Immutable i.e. it cannot change
+   Referances are mutable but instances(objects) are not.
