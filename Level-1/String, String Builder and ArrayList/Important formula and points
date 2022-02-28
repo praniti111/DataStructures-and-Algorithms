@@ -9,9 +9,20 @@ Can convert a word or a String to lower or uppercase (Toggle between them)
    Referances are mutable but instances(objects) are not.
    
 3. StringBuilder : is a String which is mutable ie. Referance can be changed and Object a=can be changed.
+Syntax : Scanner sc = new Scanner(System.in);
+         String str = sc.nextInt();
+         StringBuilder new = StringBuilder(str);// will create a new SB
+         
    Operations performed
    1. Update(.setcharAt(index, replacing element)) eg. strb.setcharAt(3,'d')
    2. delete(.deletecharAt(index)) eg. strb.deletecharAt(1)
    3. insert(.insert(index, inserting element)) eg. strb.insert(2,'e')
    4. append(Inserts at the last(end) .append(element)) eg. strb.append('s')
+   SB is used when we want to update obj more often in the same obj.
    
+4. IF THERE IS A "new" KEYWORD IT IS BOUND TO CREATE A NEW OBJECT IN HEAP(COMPULSORY)
+
+5. Time Complexity will be less in SB than string as all the changes(update, insert, delete, append) are done on the same string object. it doesnot create a new object for every chnage, like the string.
+ TC for SB = O(N) , TC for String O(N2)
+   
+6. toString() Method: This will convert all the datatypes to String and return, Any datatype in java will have a toString method.
