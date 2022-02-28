@@ -1,0 +1,6 @@
+# Formula to convert to Upper Case or to LowerCase
+'A' - 'a' = -32 
+'a' - 'A' =  32
+A can be replaced for any Capital alphabet and 'a' can be replaced by any lowercase alphabet
+eg : ('p' - 'P') = ('a' - 'A') = 32 
+Can convert a word or a String to lower or uppercase (Toggle between them)
