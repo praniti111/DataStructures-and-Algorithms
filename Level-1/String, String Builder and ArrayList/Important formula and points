@@ -7,3 +7,11 @@ Can convert a word or a String to lower or uppercase (Toggle between them)
 
 2. Java Strings are Immutable i.e. it cannot change
    Referances are mutable but instances(objects) are not.
+   
+3. StringBuilder : is a String which is mutable ie. Referance can be changed and Object a=can be changed.
+   Operations performed
+   1. Update(.setcharAt(index, replacing element)) eg. strb.setcharAt(3,'d')
+   2. delete(.deletecharAt(index)) eg. strb.deletecharAt(1)
+   3. insert(.insert(index, inserting element)) eg. strb.insert(2,'e')
+   4. append(Inserts at the last(end) .append(element)) eg. strb.append('s')
+   
