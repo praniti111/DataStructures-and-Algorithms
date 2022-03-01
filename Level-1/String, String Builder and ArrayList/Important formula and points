@@ -26,3 +26,11 @@ Syntax : Scanner sc = new Scanner(System.in);
  TC for SB = O(N) , TC for String O(N2)
    
 6. toString() Method: This will convert all the datatypes to String and return, Any datatype in java will have a toString method.
+
+
+7. ArrayList : Dynamic Array memory, unlike array as it is static.
+Syntax : ArrayList<Integer> arr = new ArrayList<>(); // Integer is the wrapper class for int.
+We cannot create the ArrayList with primitive datatypes, we have to use wrapper class to create an array.
+CRUD Opeartions in ArrayList
+//C = create db(declare and initialize) //R = get //U=set //D = delete
+
