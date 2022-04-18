@@ -16,7 +16,7 @@ public static void printDecreasing(int n)
   if(n == 0) return;
   
   //Expectation meeting with faith
-  System.out.println(n);
+  System.out.println(n);// While decreasing the number has to print first and then keep faith.
   
   //Faith: This is where the function calls itself and has a faith that it will complete the further function call and return to the function which has called it
   printDecreasing(n-1);
