@@ -16,3 +16,5 @@ class Result{
     return resultWord.length()-j;
   }
 }
+
+public class Solution{}
